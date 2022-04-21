@@ -2,6 +2,7 @@ package com.hrzafer.javafxspringbootstarter;
 
 import com.hrzafer.javafxspringbootstarter.event.StageReadyEvent;
 import javafx.application.Application;
+import javafx.application.HostServices;
 import javafx.application.Platform;
 import javafx.stage.Stage;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -19,6 +20,7 @@ public class JavaFxApp extends Application {
                 context -> {
                     context.registerBean(Application.class, () -> JavaFxApp.this);
                     context.registerBean(Parameters.class, this::getParameters);
+                    context.registerBean(HostServices.class, this::getHostServices);
                 };
         this.context = new SpringApplicationBuilder()
                 .sources(SpringBootApp.class)
