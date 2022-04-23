@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2"
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" minHeight="150.0" minWidth="300.0"
+            xmlns="http://javafx.com/javafx/11.0.2"
             fx:controller="com.hrzafer.javafxspringbootstarter.controller.MainController">
     <children>
-        <Label layoutX="31.0" layoutY="29.0" text="Google:"/>
-        <TextField fx:id="keywordTextField" layoutX="76.0" layoutY="25.0"/>
-        <Button fx:id="searchButton" layoutX="75.0" layoutY="69.0" prefHeight="25.0" prefWidth="149.0" text="Search"/>
+        <MenuBar prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#aboutMenuItemClicked" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label layoutX="14.0" layoutY="51.0" text="Google:"/>
+        <TextField fx:id="keywordTextField" layoutX="67.0" layoutY="47.0" prefHeight="25.0" prefWidth="233.0"/>
+        <Button fx:id="searchButton" layoutX="67.0" layoutY="90.0" prefHeight="25.0" prefWidth="233.0" text="Search"/>
     </children>
     <padding>
-        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        <Insets bottom="10.0" top="10.0"/>
     </padding>
 </AnchorPane>

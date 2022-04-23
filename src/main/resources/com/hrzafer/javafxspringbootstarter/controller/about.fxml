@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" prefHeight="200.0" prefWidth="300.0"
+            xmlns="http://javafx.com/javafx/11.0.2"
+            fx:controller="com.hrzafer.javafxspringbootstarter.controller.AboutController">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="17.0" prefWidth="309.0" text="JavaFX and Spring Boot Starter"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="17.0" prefWidth="333.0" text="Version: 1.0"/>
+                <Label alignment="CENTER" prefHeight="17.0" prefWidth="339.0" text="©2015–2022 Harun Zafer"/>
+                <Label alignment="CENTER" prefHeight="17.0" prefWidth="302.0" text="Made with JavaFX and Spring Boot"/>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
